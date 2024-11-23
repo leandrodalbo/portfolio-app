@@ -69,7 +69,7 @@ section > p {
 }
 
 a {
-  color: var(--color-white);
+  color: var(--color-light);
   transition: var(--transition);
 }
 

@@ -1,8 +1,4 @@
-export interface NavItem {
-  id: number;
-  link: string;
-  title: string;
-}
+import { NavItem } from "./types";
 
 export const navdata: NavItem[] = [
   {

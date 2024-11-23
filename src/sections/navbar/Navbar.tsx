@@ -1,11 +1,11 @@
 import "./navbar.css";
 
 import logo from "../../assets/logo.jpg";
-import { navdata } from "../../data/data";
+import { navdata } from "../../data/navdata";
 
 import { IoMdColorWand } from "react-icons/io";
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <nav>
       <div className="container navcontainer">
@@ -28,3 +28,5 @@ export const Navbar = () => {
     </nav>
   );
 };
+
+export default Navbar;
