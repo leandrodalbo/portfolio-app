@@ -8,7 +8,7 @@ import Portfolio from "../sections/portfolio/Portfolio";
 import Services from "../sections/services/Services";
 import Testimonials from "../sections/testimonials/Testimonials";
 
-function BugFree() {
+function App() {
   return (
     <main>
       <Header />
@@ -24,4 +24,4 @@ function BugFree() {
   );
 }
 
-export default BugFree;
+export default App;
