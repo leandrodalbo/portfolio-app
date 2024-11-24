@@ -27,3 +27,19 @@ export interface HeaderData {
   portfoliobutton: string;
   sociallinks: SocialItem[];
 }
+
+export interface AboutData {
+  textheader: string;
+  text0: string;
+  text1: string;
+  text2: string;
+  img: string;
+  servicesbutton: string;
+  servicesicon: IconType;
+  cards: AboutCard[];
+}
+
+export interface AboutCard {
+  text: string;
+  icon: IconType;
+}

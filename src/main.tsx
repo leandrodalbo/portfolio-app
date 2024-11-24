@@ -16,13 +16,14 @@ import Navbar from "./sections/navbar/Navbar";
 
 import { headerdata } from "./data/headerdata";
 import { navdata } from "./data/navdata";
+import { aboutData } from "./data/aboutdata";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <main>
       <Navbar data={navdata} />
       <Header data={headerdata} />
-      <About />
+      <About data={aboutData} />
       <Services />
       <Portfolio />
       <Testimonials />
