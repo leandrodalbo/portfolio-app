@@ -1,21 +1,30 @@
-import profileimg from "../../assets/profile.jpeg";
-import { headerdata } from "../../data/headerdata";
+import "./header.css";
 
-const Header = () => {
+import { HeaderData } from "../../data/types";
+
+interface HeaderProps {
+  data: HeaderData;
+}
+
+const Header = ({ data }: HeaderProps) => {
   return (
     <header id="header">
       <div className="container headercontainer">
-        <div className="headerprofile">
-          <img src={profileimg} alt="profileimage" />
+        <h3>{data.text0}</h3>
+        <p>{data.text1}</p>
+        <div className="headerimg">
+          <img src={data.img} alt="headerimg" />
         </div>
-        <h3>{headerdata.name}</h3>
-        <p>{headerdata.text}</p>
         <div className="headercta">
-          <a href="#contact">{headerdata.contactbutton}</a>
-          <a href="#portfolio">{headerdata.portfoliobutton}</a>
+          <a href="#contact" className="btn primary">
+            {data.contactbutton}
+          </a>
+          <a href="#portfolio" className="btn primary">
+            {data.portfoliobutton}
+          </a>
         </div>
         <div className="headersocial">
-          {headerdata.sociallinks.map((it) => (
+          {data.sociallinks.map((it) => (
             <a
               key={it.id}
               href={it.link}

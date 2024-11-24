@@ -1,45 +1,44 @@
 nav {
-    width: 100vw;
-    height: 5rem;
-    display: grid;
-    place-items: center;
-    background: var(--color-primary);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9;
-    box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 68%, 42%, 20%);
-    transition: var(--transition);
-  }
-  
-  .navcontainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .navlogo {
-    width: 2.5rem;
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  
+  width: 100vw;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  background: var(--color-primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 68%, 42%, 20%);
+  transition: var(--transition);
+}
+
+.navcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlogo {
+  width: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.navmenu {
+  display: flex;
+  gap: 3.5rem;
+}
+
+#themeicon {
+  background: transparent;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* HIDE NAV MENU ON TABLETS AND PHONES */
+@media screen and (max-width: 1024px) {
   .navmenu {
-    display: flex;
-    gap: 3.5rem;
+    display: none;
   }
-  
-  #themeicon {
-    background: transparent;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-  }
-  
-  /* HIDE NAV MENU ON TABLETS AND PHONES */
-  @media screen and (max-width: 1024px) {
-    .navmenu {
-      display: none;
-    }
-  }
-  
+}

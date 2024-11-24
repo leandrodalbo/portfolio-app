@@ -5,11 +5,14 @@ import { FaGithub } from "react-icons/fa";
 import { FaStackOverflow } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
+import headerimg from "../assets/refactortech.png";
+
 export const headerdata: HeaderData = {
-  name: "Leandrto Dal Bo",
-  text: "Robust, Agile and Clean Software solutions",
+  text0: "RefactorTech",
+  text1: "Robust, Agile and Clean Software solutions",
   contactbutton: "Get in touch",
   portfoliobutton: "Portfolio",
+  img: headerimg,
   sociallinks: [
     {
       id: 0,

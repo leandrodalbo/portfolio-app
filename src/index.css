@@ -69,7 +69,7 @@ section > p {
 }
 
 a {
-  color: var(--color-light);
+  color: var(--color-white);
   transition: var(--transition);
 }
 
@@ -119,7 +119,7 @@ img {
   display: flex;
   align-items: center;
   gap: 1rem;
-  background: var(--color-light);
+  background: var(--color-primary);
   padding: 0.6rem 2.5rem;
   border: 2px solid transparent;
   border-radius: var(--border-radius-2);
@@ -127,22 +127,13 @@ img {
 
 .btn:hover {
   background-color: transparent;
-  border-color: var(--color-light);
+  border-color: var(--color-dark);
   transform: translateY(-0.5rem);
-}
-
-.btn.white {
-  background: var(--color-white);
-}
-
-.btn.white:hover {
-  background-color: transparent;
-  border-color: var(--color-white);
 }
 
 .btn.primary {
   background: var(--color-primary);
-  color: white;
+  color: var(--color-white);
 }
 
 .btn.primary:hover {

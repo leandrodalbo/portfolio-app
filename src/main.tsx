@@ -14,11 +14,14 @@ import Services from "./sections/services/Services";
 import Testimonials from "./sections/testimonials/Testimonials";
 import Navbar from "./sections/navbar/Navbar";
 
+import { headerdata } from "./data/headerdata";
+import { navdata } from "./data/navdata";
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <main>
-      <Navbar />
-      <Header />
+      <Navbar data={navdata} />
+      <Header data={headerdata} />
       <About />
       <Services />
       <Portfolio />

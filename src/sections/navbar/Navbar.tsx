@@ -1,29 +1,28 @@
 import "./navbar.css";
 
-import logo from "../../assets/logo.jpg";
-import { navdata } from "../../data/navdata";
+import { NavData } from "../../data/types";
 
-import { IoMdColorWand } from "react-icons/io";
+interface NavbarProps {
+  data: NavData;
+}
 
-const Navbar = () => {
+const Navbar = ({ data }: NavbarProps) => {
   return (
     <nav>
       <div className="container navcontainer">
         <a href="index.html" className="navlogo">
-          <img src={logo} alt="logo-img" />
+          <img src={data.logo} alt="logo-img" />
         </a>
 
         <ul className="navmenu">
-          {navdata.map((it) => (
+          {data.items.map((it) => (
             <li key={it.id}>
               <a href={it.link}>{it.title}</a>
             </li>
           ))}
         </ul>
 
-        <button id="themeicon">
-          <IoMdColorWand />
-        </button>
+        <button id="themeicon">{<data.themeIcon />}</button>
       </div>
     </nav>
   );
