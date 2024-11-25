@@ -4,6 +4,8 @@ export interface Card {
   id: number;
   text: string;
   icon: IconType;
+  link?: string;
+  linktext?: string;
 }
 
 export interface NavData {
@@ -43,4 +45,10 @@ export interface AboutData {
   servicesbutton: string;
   servicesicon: IconType;
   cards: Card[];
+}
+
+export interface ServicesData {
+  text0: string;
+  text1: string;
+  services: Card[];
 }

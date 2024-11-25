@@ -15,8 +15,8 @@ header {
 }
 
 .headerimg {
-  width: 18rem;
-  height: 22rem;
+  width: 35rem;
+  height: 25rem;
   overflow: hidden;
   margin-bottom: 1.5rem;
 }
@@ -62,20 +62,33 @@ header {
 @media screen and (max-width: 1024px) {
   header {
     margin-top: 0;
-    height: 100vh;
+    height: 150vh;
+  }
+
+  .headerimg {
+    width: 15rem;
+    height: 15rem;
+    max-width: 80%;
+    max-height: 45vh;
   }
 }
 
 @media screen and (max-width: 600px) {
+  header {
+    margin-top: 0;
+    height: 80vh;
+  }
+
   .headerimg {
-    width: 14rem;
-    height: 18rem;
-    max-width: 60%;
-    max-height: 35vh;
+    width: 15rem;
+    height: 15rem;
+    max-width: 80%;
+    max-height: 45vh;
   }
 
   .headercontainer p {
-    width: 100%;
+    width: 90%;
+    font-size: 1.2rem;
   }
 
   .headercta {

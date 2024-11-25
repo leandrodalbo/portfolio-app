@@ -9,7 +9,6 @@
   max-height: 48rem;
   border: 1rem solid var(--color-white);
   transition: var(--transition);
-  background: green;
 }
 
 .aboutimgcontainer:hover {
@@ -67,15 +66,30 @@
   .aboutright h2 {
     text-align: center;
   }
+  .aboutright h2 {
+    font-size: 1.2rem;
+  }
+
+  .aboutright p {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .aboutcards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
 
   .aboutright .btn {
     margin-top: 2rem;
+  }
+
+  .aboutright h2 {
+    font-size: 1.2rem;
+  }
+
+  .aboutright p {
+    font-size: 1rem;
   }
 }

@@ -17,6 +17,7 @@ import Navbar from "./sections/navbar/Navbar";
 import { headerdata } from "./data/headerdata";
 import { navdata } from "./data/navdata";
 import { aboutData } from "./data/aboutdata";
+import { servicesData } from "./data/servicesdata";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -24,7 +25,7 @@ createRoot(document.getElementById("root")!).render(
       <Navbar data={navdata} />
       <Header data={headerdata} />
       <About data={aboutData} />
-      <Services />
+      <Services data={servicesData} />
       <Portfolio />
       <Testimonials />
       <Faqs />
