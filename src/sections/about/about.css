@@ -1,11 +1,81 @@
 .aboutcontainer {
+  display: grid;
+  grid-template-columns: 35% 53%;
+  gap: 11%;
 }
 
-.aboutleft {
+.aboutimgcontainer {
+  height: fit-content;
+  max-height: 48rem;
+  border: 1rem solid var(--color-white);
+  transition: var(--transition);
+  background: green;
 }
 
-.aboutright {
+.aboutimgcontainer:hover {
+  border-width: 0;
 }
 
 .aboutcards {
+  margin: 3rem 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.aboutcard {
+  text-align: center;
+}
+
+.aboutcardheader {
+  margin: 1rem 0;
+}
+
+.aboutcardicon {
+  font-size: 1.3rem;
+  color: var(--color-black);
+  border-radius: var(--border-radius-3);
+  width: fit-content;
+  margin-inline: auto;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.aboutcard:hover .aboutcardicon {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.aboutright p {
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+}
+
+.aboutright .btn {
+  margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .aboutimgcontainer {
+    display: none;
+  }
+  .aboutcontainer {
+    grid-template-columns: 1fr;
+  }
+  .aboutright h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutcards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .aboutright .btn {
+    margin-top: 2rem;
+  }
 }

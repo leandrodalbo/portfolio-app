@@ -1,5 +1,11 @@
 import { IconType } from "react-icons";
 
+export interface Card {
+  id: number;
+  text: string;
+  icon: IconType;
+}
+
 export interface NavData {
   logo: string;
   themeIcon: IconType;
@@ -36,10 +42,5 @@ export interface AboutData {
   img: string;
   servicesbutton: string;
   servicesicon: IconType;
-  cards: AboutCard[];
-}
-
-export interface AboutCard {
-  text: string;
-  icon: IconType;
+  cards: Card[];
 }

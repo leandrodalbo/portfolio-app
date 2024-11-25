@@ -18,8 +18,8 @@ export const aboutData: AboutData = {
   img: aboutimg,
 
   cards: [
-    { text: "Experience", icon: FaBusinessTime },
-    { text: "Simple (KISS)", icon: FaRegKiss },
-    { text: "SOLID Happyness", icon: RiEmotionHappyLine },
+    { id: 0, text: "Experience", icon: FaBusinessTime },
+    { id: 1, text: "Simple (KISS)", icon: FaRegKiss },
+    { id: 2, text: "SOLID Happyness", icon: RiEmotionHappyLine },
   ],
 };

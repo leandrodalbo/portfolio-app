@@ -29,6 +29,10 @@ nav {
   gap: 3.5rem;
 }
 
+.navmenu li a {
+  font-size: 1.3rem;
+}
+
 #themeicon {
   background: transparent;
   color: white;
