@@ -46,7 +46,7 @@ export const portfolioData: PortfolioData = {
       title: "Personal Portfolio",
       category: "Business Website",
       description:
-        "Website exposing my latest projects and ideas for the future.",
+        "It is always challenging for a backend guy work with Javascript and Styles. I did my best during the developement of this website.",
       technologies: "React, Vite, Typescript",
       link: "http://localhost:5173/",
       repo: "https://github.com/leandrodalbo/portfolio-app",
