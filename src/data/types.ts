@@ -52,3 +52,18 @@ export interface ServicesData {
   text1: string;
   services: Card[];
 }
+
+export interface Project {
+  id: number;
+  category: string;
+  title: string;
+  description: string;
+  technologies: string;
+  link?: string;
+  repo?: string;
+}
+
+export interface PortfolioData {
+  text: string;
+  projects: Project[];
+}

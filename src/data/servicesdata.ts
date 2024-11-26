@@ -13,8 +13,8 @@ export const servicesData: ServicesData = {
     {
       id: 0,
       text: "Backend Applications",
-      link: "#springproject",
-      linktext: "Demo",
+      link: "#portfolio",
+      linktext: "portfolio",
       icon: SiSpringboot,
     },
     {
@@ -26,8 +26,8 @@ export const servicesData: ServicesData = {
       id: 2,
       text: `Infrastructure as Code`,
       icon: SiTerraform,
-      link: "#iacdemo",
-      linktext: "Demo",
+      link: "#portfolio",
+      linktext: "portfolio",
     },
     {
       id: 3,
@@ -36,15 +36,15 @@ export const servicesData: ServicesData = {
     },
     {
       id: 4,
-      text: `Clean Code, TDD, BDD, Extreme Programming`,
-      icon: SiGithubactions,
+      text: `Frontend Applications`,
+      icon: FaReact,
+      link: "#portfolio",
+      linktext: "portfolio",
     },
     {
       id: 5,
-      text: `Frontend Applications`,
-      icon: FaReact,
-      link: "#reactdemo",
-      linktext: "Demo",
+      text: `Clean Code, TDD, BDD, Extreme Programming`,
+      icon: SiTicktick,
     },
   ],
 };

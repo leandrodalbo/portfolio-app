@@ -18,6 +18,7 @@ import { headerdata } from "./data/headerdata";
 import { navdata } from "./data/navdata";
 import { aboutData } from "./data/aboutdata";
 import { servicesData } from "./data/servicesdata";
+import { portfolioData } from "./data/portfoliodata";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -26,7 +27,7 @@ createRoot(document.getElementById("root")!).render(
       <Header data={headerdata} />
       <About data={aboutData} />
       <Services data={servicesData} />
-      <Portfolio />
+      <Portfolio data={portfolioData} />
       <Testimonials />
       <Faqs />
       <Contact />

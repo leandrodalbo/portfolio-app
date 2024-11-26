@@ -1,0 +1,58 @@
+.project {
+  background: var(--color-white);
+  padding: 1.5rem;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-1);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+  gap: 0.3rem;
+}
+
+.project:hover {
+  background: transparent;
+  color: var(--color-white);
+  transform: translateY(-0.5rem);
+}
+
+.project:hover {
+  background: transparent;
+  color: var(--color-primary);
+  transform: translateY(-0.5rem);
+}
+
+.project.light {
+  background: var(--color-light);
+}
+
+.project.light:hover {
+  background: transparent;
+  border-color: var(--color-light);
+}
+
+.project p {
+  font-size: 0.7rem;
+  margin: 0.1rem 0.2rem;
+}
+
+.project p span {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.project h6 {
+  margin: 0.1rem 0.2rem;
+}
+
+.project .projectcta {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .project {
+    padding: 1.2rem;
+  }
+}
