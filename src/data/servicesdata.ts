@@ -19,7 +19,7 @@ export const servicesData: ServicesData = {
     },
     {
       id: 1,
-      text: `Projects Refactoring and Automated Tests`,
+      text: `Automated Tests and Refactoring`,
       icon: SiTicktick,
     },
     {

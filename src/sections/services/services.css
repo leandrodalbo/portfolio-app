@@ -60,6 +60,7 @@
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+
   .servicedetail {
     display: flex;
     justify-content: space-between;
@@ -69,7 +70,7 @@
   }
 
   .serviceicon {
-    padding: 0.2rem;
+    padding: 1rem;
     font-size: 1rem;
   }
 
