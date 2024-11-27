@@ -2,7 +2,7 @@ import "./categories.css";
 import { useState } from "react";
 
 export interface CategoriesProps {
-  categories: string[];
+  categories: Set<string>;
   categoryClass: string;
   byCategory: (category: string) => void;
 }
@@ -19,7 +19,7 @@ export const Categories = ({
     byCategory(category);
   };
 
-  return categories.map((it) => (
+  return Array.from(categories).map((it) => (
     <button
       key={it}
       className={`${categoryClass} ${category === it ? "active" : ""}`}

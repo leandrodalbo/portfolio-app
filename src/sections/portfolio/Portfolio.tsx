@@ -13,6 +13,10 @@ export interface PortfolioProps {
 const Portfolio = ({ data }: PortfolioProps) => {
   const [projects, setProjects] = useState(data.projects);
 
+  const categories = new Set([
+    "All",
+    ...data.projects.map((it) => it.category.id),
+  ]);
   const byCategory = (category: string) => {
     setProjects([...data.projects]);
     if (category !== "All") {
@@ -28,7 +32,7 @@ const Portfolio = ({ data }: PortfolioProps) => {
       <div className="container portfoliocontainer">
         <div className="categorieswrap">
           <Categories
-            categories={data.categories}
+            categories={categories}
             categoryClass=" btn sm catbtn"
             byCategory={byCategory}
           />
