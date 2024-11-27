@@ -9,7 +9,7 @@ export const ProjectDetail = ({ project }: ProjectDetailProps) => {
   return (
     <div className="project">
       <h4>{project.title}</h4>
-      <h6>{project.category}</h6>
+      <h6>{project.category.id}</h6>
 
       <p>
         <span>{"Technologies: "}</span>

@@ -1,0 +1,4 @@
+.active {
+  background: var(--color-light);
+  border: 1.5px solid var(--color-primary);
+}

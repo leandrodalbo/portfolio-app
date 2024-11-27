@@ -1,3 +1,4 @@
+import { projectCategories } from "./portfoliodata";
 import { IconType } from "react-icons";
 
 export interface Card {
@@ -55,7 +56,7 @@ export interface ServicesData {
 
 export interface Project {
   id: number;
-  category: string;
+  category: ProjectCategory;
   title: string;
   description: string;
   technologies: string;
@@ -63,7 +64,12 @@ export interface Project {
   repo?: string;
 }
 
+export interface ProjectCategory {
+  id: string;
+  description: string;
+}
 export interface PortfolioData {
   text: string;
+  categories: string[];
   projects: Project[];
 }
