@@ -76,6 +76,5 @@ export interface ProjectCategory {
 }
 export interface PortfolioData {
   text: string;
-  categories: string[];
   projects: Project[];
 }

@@ -1,10 +1,7 @@
 import { PortfolioData } from "./types";
 
-export const projectCategories = ["All", "UI", "Backend/Serverless", "IaC"];
-
 export const portfolioData: PortfolioData = {
   text: "My Projects",
-  categories: projectCategories,
   projects: [
     {
       id: 0,
