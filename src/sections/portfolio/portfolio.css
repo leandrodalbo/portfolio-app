@@ -10,7 +10,6 @@
   text-transform: capitalize;
   transition: var(--transition);
   color: var(--color-black);
-
   background: var(--color-white);
 }
 

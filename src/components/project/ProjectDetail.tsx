@@ -1,5 +1,5 @@
-import { Project } from "../../data/types";
 import "./project.css";
+import { Project } from "../../data/types";
 
 export interface ProjectDetailProps {
   project: Project;

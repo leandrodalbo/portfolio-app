@@ -13,9 +13,9 @@ export const portfolioData: PortfolioData = {
         id: "Backend/Serverless",
         description: "Backend RESTful API",
       },
-      description: "API exposing possible crypto trading entries.",
+      description: "RESTful API exposing crypto trading entries.",
       technologies:
-        "Spring-boot, Java, Gradle, webflux, r2dbc, amqp, flywaydb, junit, testcontainers",
+        "Spring-boot, Java, Gradle, Webflux, r2dbc, AMQP, flywaydb, junit, testcontainers",
 
       repo: "https://github.com/leandrodalbo/crypto-trading-signal",
     },
@@ -46,19 +46,18 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: 3,
-      title: "IaC",
+      title: "Crypto Trading Signal IaC",
       category: { id: "IaC", description: "Cloud Infrastructure" },
-      description:
-        "Creates the infrastructure to run the application on the cloud.",
+      description: "Creates the infrastructure to run the application on AWS.",
       technologies: "Terraform, AWS",
       repo: "https://github.com/leandrodalbo/trading-signals-infrasctructure",
     },
     {
       id: 4,
-      title: "Personal Portfolio",
+      title: "Current Project",
       category: { id: "UI", description: "Business Website" },
       description:
-        "It is always challenging for a backend guy work with Javascript and Styles. I did my best during the developement of this website.",
+        "It is always fun for a backend person to create a UI. I did my best during the developement of this website.",
       technologies: "React, Vite, Typescript",
       link: "http://localhost:5173/",
       repo: "https://github.com/leandrodalbo/portfolio-app",
