@@ -1,6 +1,6 @@
 import { AboutData } from "./types";
 
-import aboutimg from "../assets/about.jpg";
+import aboutimg from "../assets/codebrush.jpg";
 
 import { FaBusinessTime } from "react-icons/fa6";
 import { RiEmotionHappyLine } from "react-icons/ri";

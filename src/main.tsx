@@ -18,6 +18,7 @@ import { aboutData } from "./data/aboutdata";
 import { servicesData } from "./data/servicesdata";
 import { portfolioData } from "./data/portfoliodata";
 import { contactData } from "./data/contactdata";
+import { socialsData } from "./data/socialsdata";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -28,8 +29,8 @@ createRoot(document.getElementById("root")!).render(
       <Services data={servicesData} />
       <Portfolio data={portfolioData} />
       <Contact data={contactData} />
-      <Footer />
-      <FloatingNav />
+      <Footer socialsData={socialsData} />
+      {/* <FloatingNav /> */}
     </main>
   </StrictMode>
 );
