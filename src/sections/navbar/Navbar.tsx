@@ -11,7 +11,7 @@ const Navbar = ({ data }: NavbarProps) => {
     <nav>
       <div className="container navcontainer">
         <a href="index.html">
-          <p>CODE CLEANER</p>
+          <p>{data.logo}</p>
         </a>
 
         <ul className="navmenu">

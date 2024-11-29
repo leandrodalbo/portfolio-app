@@ -4,8 +4,6 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 import About from "./sections/about/About";
-import Contact from "./sections/contact/Contact";
-import FloatingNav from "./sections/floating-nav/FloatingNav";
 import Footer from "./sections/footer/Footer";
 import Header from "./sections/header/Header";
 import Portfolio from "./sections/portfolio/Portfolio";
@@ -28,8 +26,7 @@ createRoot(document.getElementById("root")!).render(
       <About data={aboutData} />
       <Services data={servicesData} />
       <Portfolio data={portfolioData} />
-      <Contact data={contactData} />
-      <Footer socialsData={socialsData} />
+      <Footer socialsData={socialsData} contactData={contactData} />
       {/* <FloatingNav /> */}
     </main>
   </StrictMode>

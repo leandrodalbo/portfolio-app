@@ -1,11 +1,10 @@
 import { NavData } from "./types";
 
-import logo from "../assets/logo.png";
 import { IoMdColorWand } from "react-icons/io";
 import { sectionsData } from "./sectionsdata";
 
 export const navdata: NavData = {
-  logo: logo,
+  logo: "CODE CLEANER",
   themeIcon: IoMdColorWand,
   items: sectionsData,
 };

@@ -24,7 +24,7 @@ nav {
   color: var(--color-white);
   text-decoration: solid;
   letter-spacing: 0.1rem;
-  text-shadow: 0.5px 1px;
+  text-shadow: 0.5px 0.5px;
   border-radius: var(--border-radius-2);
 }
 
