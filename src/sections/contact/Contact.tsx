@@ -8,10 +8,8 @@ export interface ContactProps {
 const Contact = ({ data }: ContactProps) => {
   return (
     <section id="contact">
-      <h2>{data.textheader}</h2>
-
       <div className="contact contactcontainer">
-        <p>{data.text0}</p>
+        <h2>{data.textheader}</h2>
         <a href={data.text1} target="_blank" rel="noopener noreferrer">
           {<data.icon />}
         </a>

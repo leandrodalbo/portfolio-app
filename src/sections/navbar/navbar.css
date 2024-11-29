@@ -18,15 +18,21 @@ nav {
   align-items: center;
 }
 
-.navlogo {
-  width: 2.5rem;
-  border-radius: 50%;
-  overflow: hidden;
+.navcontainer p {
+  padding: 1rem;
+  background: transparent;
+  color: var(--color-white);
+  text-decoration: solid;
+  letter-spacing: 0.1rem;
+  text-shadow: 0.5px 1px;
+  border-radius: var(--border-radius-2);
 }
 
 .navmenu {
+  color: var(--color-white);
   display: flex;
   gap: 3.5rem;
+  text-transform: capitalize;
 }
 
 .navmenu li a {
@@ -35,7 +41,7 @@ nav {
 
 #themeicon {
   background: transparent;
-  color: white;
+  color: var(--color-white);
   font-size: 2rem;
   cursor: pointer;
 }

@@ -10,8 +10,8 @@ const Navbar = ({ data }: NavbarProps) => {
   return (
     <nav>
       <div className="container navcontainer">
-        <a href="index.html" className="navlogo">
-          <img src={data.logo} alt="logo-img" />
+        <a href="index.html">
+          <p>CODE CLEANER</p>
         </a>
 
         <ul className="navmenu">
