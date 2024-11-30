@@ -1,16 +1,18 @@
 import "./navbar.css";
 
 import { NavData } from "../../data/types";
+import { useThemeContext } from "../../context/ThemeContext";
 
 interface NavbarProps {
   data: NavData;
 }
 
 const Navbar = ({ data }: NavbarProps) => {
+  const { toggleDark, dark } = useThemeContext();
   return (
     <nav>
       <div className="container navcontainer">
-        <a href="index.html">
+        <a href="#header">
           <p>{data.logo}</p>
         </a>
 
@@ -22,7 +24,10 @@ const Navbar = ({ data }: NavbarProps) => {
           ))}
         </ul>
 
-        <button id="themeicon">{<data.themeIcon />}</button>
+        <button id="themeicon" onClick={toggleDark}>
+          {dark && <data.darkmodeIcon />}
+          {!dark && <data.lightmodeIcon />}
+        </button>
       </div>
     </nav>
   );

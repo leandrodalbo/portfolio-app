@@ -21,6 +21,14 @@
   border-color: var(--color-light);
 }
 
+.card span {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  display: grid;
+  place-items: center;
+  border-radius: var(--border-radius-3);
+}
+
 @media screen and (max-width: 600px) {
   .card {
     padding: 1.2rem;

@@ -10,7 +10,8 @@ export interface Card {
 
 export interface NavData {
   logo: string;
-  themeIcon: IconType;
+  darkmodeIcon: IconType;
+  lightmodeIcon: IconType;
   items: NavItem[];
 }
 

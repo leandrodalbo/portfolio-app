@@ -1,10 +1,12 @@
 import { NavData } from "./types";
 
-import { IoMdColorWand } from "react-icons/io";
 import { sectionsData } from "./sectionsdata";
+import { MdDarkMode } from "react-icons/md";
+import { MdOutlineDarkMode } from "react-icons/md";
 
 export const navdata: NavData = {
-  logo: "CODE CLEANER",
-  themeIcon: IoMdColorWand,
+  logo: "JungleLogic Labs",
+  darkmodeIcon: MdDarkMode,
+  lightmodeIcon: MdOutlineDarkMode,
   items: sectionsData,
 };
