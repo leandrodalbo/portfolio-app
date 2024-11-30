@@ -7,7 +7,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9;
+  z-index: 99;
   box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 68%, 42%, 20%);
   transition: var(--transition);
 }
@@ -48,7 +48,21 @@ nav {
 
 /* HIDE NAV MENU ON TABLETS AND PHONES */
 @media screen and (max-width: 1024px) {
-  .navmenu {
+  .logo {
     display: none;
+  }
+
+  .navmenu {
+    display: flex;
+    gap: 0.4rem;
+    text-transform: capitalize;
+  }
+
+  .navmenu li a {
+    font-size: 0.9rem;
+  }
+
+  #themeicon {
+    font-size: 1rem;
   }
 }
