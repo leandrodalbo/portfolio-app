@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 35% 53%;
   gap: 11%;
+  padding: 3rem;
 }
 
 .aboutimgcontainer {
