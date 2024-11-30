@@ -1,5 +1,4 @@
 header {
-  margin-top: 7rem;
   height: 100vh;
   display: grid;
   place-items: center;
@@ -12,6 +11,7 @@ header {
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin-top: 5rem;
 }
 
 .headerimg {
@@ -27,6 +27,7 @@ header {
   margin: 0.6rem 0 2rem;
   font-size: 1.2rem;
   text-transform: capitalize;
+  color: var(--color-dark);
 }
 
 .headercta {

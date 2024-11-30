@@ -1,7 +1,7 @@
 import { PortfolioData } from "./types";
 
 export const portfolioData: PortfolioData = {
-  text: "My Projects",
+  text: "Projects",
   projects: [
     {
       id: 0,

@@ -10,6 +10,9 @@ footer {
   display: flex;
   gap: 1.5rem;
   margin: 1rem auto 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footersocials a {
@@ -42,7 +45,7 @@ footer {
 .contactcontainer a {
   width: 3rem;
   aspect-ratio: 1/1;
-  color: white;
+  color: var(--color-white);
   place-items: center;
   display: grid;
   font-size: 2rem;
@@ -52,8 +55,7 @@ footer {
 }
 
 .contactcontainer a:hover {
-  background: transparent;
-  border-color: var(--color-primary);
+  background: var(--color-white);
   color: var(--color-primary);
   transform: translateY(-0.5rem);
 }

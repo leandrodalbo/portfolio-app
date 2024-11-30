@@ -1,6 +1,6 @@
 import { AboutData } from "./types";
 
-import aboutimg from "../assets/codecleaner2.jpg";
+import aboutimg from "../assets/lion0.jpg";
 
 import { FaBusinessTime } from "react-icons/fa6";
 import { RiEmotionHappyLine } from "react-icons/ri";
@@ -8,7 +8,7 @@ import { FaRegKiss } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa";
 
 export const aboutData: AboutData = {
-  textheader: "What is Code Cleaner about?",
+  textheader: "What is JungleLogic Labs about?",
   text0: "Delivering Robust and clean Software Products.",
   text1: "Making sure that the right stack is choosen.",
   text2: "Avoid reinventing the weel.",

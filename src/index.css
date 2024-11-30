@@ -19,17 +19,6 @@ body {
 }
 
 :root {
-  --primary-hue: 270;
-  --black-lightness: 15%;
-  --dark-lightness: 44%;
-  --light-lightness: 94%;
-  --white-lightness: 100%;
-  --color-primary: hsl(var(--primary-hue), 89%, 41%);
-  --color-white: hsl(0, 5%, var(--white-lightness));
-  --color-light: hsl(var(--primary-hue), 5%, var(--light-lightness));
-  --color-black: hsl(var(--primary-hue), 5%, var(--black-lightness));
-  --color-dark: hsl(var(--primary-hue), 5%, var(--dark-lightness));
-
   /* GENERAL CONTAINER VARIABLES */
   --container-width-lg: 76%;
   --container-width-md: 90%;
@@ -43,10 +32,43 @@ body {
   --transition: all 500ms ease;
 }
 
+.darkmode {
+  --primary-hue: 4100;
+
+  --black-lightness: 100%;
+  --white-lightness: 8%;
+
+  --dark-lightness: 94%;
+  --light-lightness: 44%;
+
+  --color-primary: hsl(var(--primary-hue), 89%, 41%);
+  --color-white: hsl(0, 5%, var(--white-lightness));
+  --color-light: hsl(var(--primary-hue), 5%, var(--light-lightness));
+  --color-black: hsl(var(--primary-hue), 5%, var(--black-lightness));
+  --color-dark: hsl(var(--primary-hue), 5%, var(--dark-lightness));
+}
+
+.ligthmode {
+  --primary-hue: 3350;
+
+  --black-lightness: 15%;
+  --white-lightness: 100%;
+
+  --dark-lightness: 10%;
+  --light-lightness: 94%;
+
+  --color-primary: hsl(var(--primary-hue), 89%, 41%);
+  --color-white: hsl(0, 5%, var(--white-lightness));
+  --color-light: hsl(var(--primary-hue), 5%, var(--light-lightness));
+  --color-black: hsl(var(--primary-hue), 5%, var(--black-lightness));
+  --color-dark: hsl(var(--primary-hue), 5%, var(--dark-lightness));
+}
+
 .container {
   width: var(--container-width-lg);
   margin-inline: auto;
   max-width: 1920px;
+  background: transparent;
 }
 
 section {

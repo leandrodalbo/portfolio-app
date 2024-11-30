@@ -7,7 +7,7 @@ import { SiGithubactions } from "react-icons/si";
 import { FaReact } from "react-icons/fa6";
 
 export const servicesData: ServicesData = {
-  text0: "Services Provided",
+  text0: "Services",
   text1: "Work hard, have fun and make history",
   services: [
     {
