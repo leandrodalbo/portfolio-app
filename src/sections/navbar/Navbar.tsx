@@ -12,7 +12,7 @@ const Navbar = ({ data }: NavbarProps) => {
   return (
     <nav>
       <div className="container navcontainer">
-        <a href="#header">
+        <a className="logo" href="#header">
           <p>{data.logo}</p>
         </a>
 
