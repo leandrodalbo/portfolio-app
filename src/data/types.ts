@@ -6,6 +6,9 @@ export interface Card {
   icon: IconType;
   link?: string;
   linktext?: string;
+  text0: string;
+  text1: string;
+  text2: string;
 }
 
 export interface NavData {
@@ -19,6 +22,7 @@ export interface NavItem {
   id: number;
   link: string;
   title: string;
+  icon: IconType;
 }
 
 export interface SocialItem {
@@ -39,9 +43,7 @@ export interface HeaderData {
 
 export interface AboutData {
   textheader: string;
-  text0: string;
-  text1: string;
-  text2: string;
+
   img: string;
   servicesbutton: string;
   servicesicon: IconType;

@@ -5,56 +5,54 @@ export const portfolioData: PortfolioData = {
   projects: [
     {
       id: 0,
-      title: "Crypto Trading Signal API",
+      title: "Crypto Trading Signals API",
       category: {
         id: "Backend/Serverless",
         description: "Backend RESTful API",
       },
-      description: "RESTful API exposing crypto trading entries.",
+      description: "RESTful API exposing crypto trading signals.",
       technologies:
-        "Spring-boot, Java, Gradle, Webflux, r2dbc, AMQP, flywaydb, junit, testcontainers",
+        "Spring-boot, Java, Gradle, jdbc, flywaydb, junit, testcontainers",
 
       repo: "https://github.com/leandrodalbo/crypto-trading-signal",
     },
     {
       id: 1,
-      title: "Crypto Trading Signal Function",
+      title: "Crypto Trading Signals Function",
       category: {
         id: "Backend/Serverless",
         description: "Serverless Lambda function",
       },
-      description:
-        "Fetch and analyse data from Binance using trading indicators.",
-      technologies:
-        "Spring-Boot, Java, Gradle, Webflux, AWS, AMQP, ta-lib, Junit",
+      description: "Fetch and analyse market data using trading indicators.",
+      technologies: "Spring-Boot, Java, Maven, AWS Lambda, ta-lib, Junit",
 
       repo: "https://github.com/leandrodalbo/crypto-trading-signal-function",
     },
     {
       id: 2,
-      title: "Crypto Trading Signal UI",
+      title: "Crypto Trading Signals UI",
       category: {
         id: "UI",
         description: "Front-End application",
       },
-      description:
-        "Consuming a RESTful API and exposing trading entries to the users.",
-      technologies: "React, Vite, Typescript, Jest",
+      description: "Website exposing trading signals to the users.",
+      technologies: "React, Vite, Typescript, Jest, Vitetest",
+      link: "http://localhost:5173/",
+      repo: "https://github.com/leandrodalbo/crypto-trading-signals-ui",
     },
     {
       id: 3,
-      title: "Crypto Trading Signal IaC",
+      title: "Crypto Trading Signals IaC",
       category: { id: "IaC", description: "Cloud Infrastructure" },
-      description: "Creates the infrastructure to run the application on AWS.",
+      description: "Infrastructure needed to run the applications on AWS.",
       technologies: "Terraform, AWS",
       repo: "https://github.com/leandrodalbo/trading-signals-infrasctructure",
     },
     {
       id: 4,
-      title: "Current Project",
+      title: "This Project",
       category: { id: "UI", description: "Business Website" },
-      description:
-        "It is always fun for a backend person to create a UI. I did my best during the developement of this website.",
+      description: "I had a lot of fun during the development of this website.",
       technologies: "React, Vite, Typescript",
       link: "http://localhost:5173/",
       repo: "https://github.com/leandrodalbo/portfolio-app",
