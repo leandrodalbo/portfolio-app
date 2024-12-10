@@ -25,7 +25,7 @@ export const aboutData: AboutData = {
       text0: "Providing products and services that customers truly need.",
       text1: "Following market trends.",
       text2:
-        "Adapting to changes in technology, customer expectations, and other external factors.",
+        "Adapting to changes in technology, customer expectations and external factors.",
     },
     {
       id: 1,

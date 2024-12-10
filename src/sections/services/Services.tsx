@@ -13,7 +13,12 @@ const Services = ({ data }: ServicesProps) => {
       <p>{data.text1}</p>
       <div className="container servicescontainer">
         {data.services.map((it) => (
-          <CardComponent key={it.id} card={it} onClickAction={() => {}} />
+          <CardComponent
+            key={it.id}
+            card={it}
+            onClickAction={() => {}}
+            isSelected={false}
+          />
         ))}
       </div>
     </section>
