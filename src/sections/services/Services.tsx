@@ -16,11 +16,8 @@ const Services = ({ data }: ServicesProps) => {
           <CardComponent
             key={it.id}
             card={it}
-            carddetailclass="servicedetail"
-            cardclass="service light"
-            headerclass="serviceheader"
-            iconclass="serviceicon"
-            linkclass="servicedemo"
+            onClickAction={() => {}}
+            isSelected={false}
           />
         ))}
       </div>

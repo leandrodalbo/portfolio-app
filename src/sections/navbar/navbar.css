@@ -18,6 +18,12 @@ nav {
   align-items: center;
 }
 
+.logo {
+  background: transparent;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
 .navcontainer p {
   padding: 1rem;
   background: transparent;
@@ -36,7 +42,7 @@ nav {
 }
 
 .navmenu li a {
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 
 #themeicon {
@@ -48,21 +54,15 @@ nav {
 
 /* HIDE NAV MENU ON TABLETS AND PHONES */
 @media screen and (max-width: 1024px) {
-  .logo {
-    display: none;
-  }
-
   .navmenu {
-    display: flex;
-    gap: 0.4rem;
-    text-transform: capitalize;
+    gap: 1rem;
   }
 
   .navmenu li a {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
 
   #themeicon {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }

@@ -11,45 +11,6 @@
   color: var(--color-dark);
 }
 
-.card.service {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.serviceicon {
-  background: var(--color-primary);
-  padding: 0.4rem;
-  border-radius: var(--border-radius-3);
-  font-size: 2rem;
-  color: var(--color-white);
-  transition: var(--transition);
-}
-
-.service:hover .serviceicon {
-  background: var(--color-light);
-  color: var(--color-primary);
-}
-
-.service .serviceheader {
-  margin: 0.5rem 0.5rem;
-  padding: 0.5rem 0.5rem;
-  font-size: 1.1rem;
-}
-
-.servicedetail {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-}
-
-.servicedemo {
-  color: var(--color-primary);
-  margin: 0.5rem 0.5rem;
-  padding: 0.5rem 0.5rem;
-}
-
 @media screen and (max-width: 1024px) {
   .servicescontainer {
     grid-template-columns: 1fr;
@@ -61,24 +22,5 @@
   .servicescontainer {
     grid-template-columns: 1fr;
     gap: 1rem;
-  }
-
-  .servicedetail {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    align-items: center;
-    font-size: 0.9rem;
-  }
-
-  .serviceicon {
-    padding: 1rem;
-    font-size: 1rem;
-  }
-
-  .service .serviceheader {
-    margin: 0.2rem 0.2rem;
-    padding: 0.2rem 0.2rem;
-    font-size: 0.8rem;
   }
 }

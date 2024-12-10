@@ -20,56 +20,32 @@
   margin: 3rem 0 1.5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-.aboutcard {
-  text-align: center;
-}
-
-.aboutcardheader {
-  margin: 1rem 0;
-}
-
-.aboutcardicon {
-  font-size: 1.3rem;
-  color: var(--color-black);
-  border-radius: var(--border-radius-3);
-  width: fit-content;
-  margin-inline: auto;
-  padding: 0.6rem;
-  display: flex;
-  align-items: center;
-  transition: var(--transition);
-}
-
-.aboutcard:hover .aboutcardicon {
-  background: var(--color-primary);
-  color: var(--color-white);
+  gap: 1.2rem;
 }
 
 .aboutright p {
-  margin-bottom: 0.8rem;
-  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
   text-transform: capitalize;
+  color: var(--color-dark);
 }
 
 .aboutright .btn {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
 }
 
 @media screen and (max-width: 1024px) {
   .aboutimgcontainer {
     display: none;
   }
+
   .aboutcontainer {
     grid-template-columns: 1fr;
+    align-items: center;
   }
   .aboutright h2 {
     text-align: center;
-  }
-  .aboutright h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .aboutright p {
@@ -80,15 +56,15 @@
 @media screen and (max-width: 600px) {
   .aboutcards {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .aboutright .btn {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
 
   .aboutright h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .aboutright p {

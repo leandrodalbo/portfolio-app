@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { CardComponent } from "../../components/card/Card";
 import { AboutData } from "../../data/types";
 import "./about.css";
@@ -6,6 +7,12 @@ export interface AboutProps {
   data: AboutData;
 }
 const About = ({ data }: AboutProps) => {
+  const [cardId, setCardId] = useState(data.cards[0].id);
+
+  const selectCard = (id: number) => {
+    setCardId(id);
+  };
+
   return (
     <section id="about">
       <div className="container aboutcontainer">
@@ -19,16 +26,15 @@ const About = ({ data }: AboutProps) => {
             {data.cards.map((it) => (
               <CardComponent
                 key={it.id}
-                cardclass="aboutcard"
-                headerclass="aboutcardheader"
-                iconclass="aboutcardicon"
                 card={it}
+                onClickAction={selectCard}
+                isSelected={cardId == it.id}
               />
             ))}
           </div>
-          <p>{data.text0}</p>
-          <p>{data.text1}</p>
-          <p>{data.text2}</p>
+          <p>{data.cards[cardId].text0}</p>
+          <p>{data.cards[cardId].text1}</p>
+          <p>{data.cards[cardId].text2}</p>
           <a href="#services" className="btn primary">
             {data.servicesbutton} {<data.servicesicon />}
           </a>

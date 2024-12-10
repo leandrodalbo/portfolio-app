@@ -4,32 +4,22 @@ import { Card } from "../../data/types";
 
 export interface CardProps {
   card: Card;
-  cardclass?: string;
-  carddetailclass?: string;
-  headerclass?: string;
-  iconclass?: string;
-  linkclass?: string;
+  isSelected: boolean;
+  onClickAction: (id: number) => void;
 }
 
 export const CardComponent = ({
   card,
-  cardclass,
-  carddetailclass,
-  headerclass,
-  iconclass,
-  linkclass,
+  isSelected,
+  onClickAction,
 }: CardProps) => {
   return (
-    <article className={`card ${cardclass}`}>
-      <span className={iconclass}>{<card.icon />}</span>
-      <div className={carddetailclass}>
-        <h5 className={headerclass}>{card.text}</h5>
-        {card.link && card.linktext && (
-          <a className={linkclass} href={card.link}>
-            {card.linktext}
-          </a>
-        )}
-      </div>
+    <article
+      className={`card ${isSelected ? "selected" : "notselected"}`}
+      onClick={() => onClickAction(card.id)}
+    >
+      <span className="cardicon">{<card.icon />}</span>
+      <h5 className="cardtext">{card.text}</h5>
     </article>
   );
 };
