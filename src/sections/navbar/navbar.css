@@ -18,6 +18,12 @@ nav {
   align-items: center;
 }
 
+.logo {
+  background: transparent;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
 .navcontainer p {
   padding: 1rem;
   background: transparent;

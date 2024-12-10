@@ -8,9 +8,9 @@ import { FaRegKiss } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa";
 
 export const aboutData: AboutData = {
-  textheader: "What is JungleLogic Labs about?",
+  textheader: "What is JungleLogic Lab about?",
   text0: "Delivering Robust and clean Software Products.",
-  text1: "Making sure that the right stack is choosen.",
+  text1: "Always focused on the simplest solution that solves your problem.",
   text2: "Avoid reinventing the weel.",
   servicesbutton: "Services",
   servicesicon: FaArrowDown,
