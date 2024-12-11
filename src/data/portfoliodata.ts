@@ -13,7 +13,7 @@ export const portfolioData: PortfolioData = {
       description: "RESTful API exposing crypto trading signals.",
       technologies:
         "Spring-boot, Java, Gradle, jdbc, flywaydb, junit, testcontainers",
-
+      link: "https://prod-trading-signals-alb-2085839500.eu-west-2.elb.amazonaws.com/apidocs/swagger-ui/index.html",
       repo: "https://github.com/leandrodalbo/crypto-trading-signal",
     },
     {
@@ -25,7 +25,6 @@ export const portfolioData: PortfolioData = {
       },
       description: "Fetch and analyse market data using trading indicators.",
       technologies: "Spring-Boot, Java, Maven, AWS Lambda, ta-lib, Junit",
-
       repo: "https://github.com/leandrodalbo/crypto-trading-signal-function",
     },
     {
@@ -37,7 +36,7 @@ export const portfolioData: PortfolioData = {
       },
       description: "Website exposing trading signals to the users.",
       technologies: "React, Vite, Typescript, Jest, Vitetest",
-      link: "http://localhost:5173/",
+      link: "https://cryptosignalzone.com/",
       repo: "https://github.com/leandrodalbo/crypto-trading-signals-ui",
     },
     {
@@ -54,7 +53,7 @@ export const portfolioData: PortfolioData = {
       category: { id: "UI", description: "Business Website" },
       description: "I had a lot of fun during the development of this website.",
       technologies: "React, Vite, Typescript",
-      link: "http://localhost:5173/",
+      link: "https://jungle-logic.com",
       repo: "https://github.com/leandrodalbo/portfolio-app",
     },
   ],

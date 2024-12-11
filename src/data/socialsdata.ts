@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 export const socialsData = [
   {
     id: 0,
-    link: "https://x.com/leandrodbo/media",
+    link: "https://x.com/JunglelogicLab",
     text: "X",
     icon: FaXTwitter,
   },
@@ -17,7 +17,7 @@ export const socialsData = [
   },
   {
     id: 2,
-    link: "https://www.linkedin.com/in/leandrodalbo",
+    link: "https://www.linkedin.com/in/leandrodlb",
     text: "Linkedin",
     icon: FaLinkedin,
   },
