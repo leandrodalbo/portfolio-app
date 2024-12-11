@@ -6,8 +6,6 @@ import { TbCircleNumber0Filled } from "react-icons/tb";
 import { TbCircleNumber1Filled } from "react-icons/tb";
 import { TbCircleNumber2Filled } from "react-icons/tb";
 
-import { RiEmotionHappyLine } from "react-icons/ri";
-import { FaRegKiss } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa";
 
 export const aboutData: AboutData = {
