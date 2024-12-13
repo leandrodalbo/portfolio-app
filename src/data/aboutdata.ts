@@ -1,6 +1,6 @@
 import { AboutData } from "./types";
 
-import aboutimg from "../assets/lion0.jpg";
+import aboutimg from "../assets/l3.png";
 
 import { TbCircleNumber0Filled } from "react-icons/tb";
 import { TbCircleNumber1Filled } from "react-icons/tb";
@@ -18,7 +18,7 @@ export const aboutData: AboutData = {
   cards: [
     {
       id: 0,
-      text: "Natural order",
+      text: "Natural Order",
       icon: TbCircleNumber0Filled,
       text0: "Providing products and services that customers truly need.",
       text1: "Following market trends.",
@@ -29,7 +29,7 @@ export const aboutData: AboutData = {
       id: 1,
       text: "Simple and Clean",
       icon: TbCircleNumber1Filled,
-      text0: "Delivering Robust and clean Software Products.",
+      text0: "Delivering robust and clean software products.",
       text1:
         "Always focused on the simplest solution that solves your problem.",
       text2: "Avoid reinventing the weel.",

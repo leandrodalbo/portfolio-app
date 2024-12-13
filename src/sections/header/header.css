@@ -59,7 +59,7 @@ header {
 .headersocial a:hover {
   background: var(--color-primary);
   color: var(--color-white);
-  transform: translateX(01.5rem);
+  transform: rotate(360deg);
 }
 
 @media screen and (max-width: 1024px) {
@@ -79,7 +79,7 @@ header {
 @media screen and (max-width: 600px) {
   header {
     margin-top: 0;
-    height: 80vh;
+    height: 100vh;
   }
 
   .headerimg {

@@ -3,11 +3,12 @@ import { Project } from "../../data/types";
 
 export interface ProjectDetailProps {
   project: Project;
+  isSelected: boolean;
 }
 
-export const ProjectDetail = ({ project }: ProjectDetailProps) => {
+export const ProjectDetail = ({ project, isSelected }: ProjectDetailProps) => {
   return (
-    <div className="project">
+    <div className={`project ${isSelected === true ? "selected" : ""}`}>
       <h4>{project.title}</h4>
       <h6>{project.category.id}</h6>
 
