@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 import About from "./sections/about/About";
-import Footer from "./sections/footer/Footer";
 import Header from "./sections/header/Header";
 import Portfolio from "./sections/portfolio/Portfolio";
 import Services from "./sections/services/Services";
