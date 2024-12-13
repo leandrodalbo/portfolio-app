@@ -4,19 +4,19 @@ import { useState } from "react";
 export interface CategoriesProps {
   categories: Set<string>;
   categoryClass: string;
-  byCategory: (category: string) => void;
+  changeCategory: (category: string) => void;
 }
 
 export const Categories = ({
   categories,
   categoryClass,
-  byCategory,
+  changeCategory,
 }: CategoriesProps) => {
   const [category, setCategory] = useState("All");
 
   const handleSelection = (category: string) => {
     setCategory(category);
-    byCategory(category);
+    changeCategory(category);
   };
 
   return Array.from(categories).map((it) => (

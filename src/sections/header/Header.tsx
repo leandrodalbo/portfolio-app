@@ -16,8 +16,13 @@ const Header = ({ data }: HeaderProps) => {
           <img src={data.img} alt="headerimg" />
         </div>
         <div className="headercta">
-          <a href="#contact" className="btn primary">
-            {data.contactbutton}
+          <a
+            href={data.email}
+            className="btn primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {data.emailButton}
           </a>
           <a href="#portfolio" className="btn primary">
             {data.portfoliobutton}

@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 35% 53%;
   gap: 11%;
-  padding: 3rem;
+  padding: 6rem 2rem;
 }
 
 .aboutimgcontainer {
@@ -26,7 +26,6 @@
 .aboutright p {
   margin-bottom: 0.5rem;
   font-size: 1.4rem;
-  text-transform: capitalize;
   color: var(--color-dark);
 }
 

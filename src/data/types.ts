@@ -36,7 +36,8 @@ export interface HeaderData {
   text0: string;
   text1: string;
   img: string;
-  contactbutton: string;
+  emailButton: string;
+  email: string;
   portfoliobutton: string;
   sociallinks: SocialItem[];
 }

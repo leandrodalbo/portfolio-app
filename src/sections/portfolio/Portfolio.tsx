@@ -11,19 +11,15 @@ export interface PortfolioProps {
 }
 
 const Portfolio = ({ data }: PortfolioProps) => {
-  const [projects, setProjects] = useState(data.projects);
+  const [category, setCategory] = useState("All");
 
   const categories = new Set([
     "All",
     ...data.projects.map((it) => it.category.id),
   ]);
-  const byCategory = (category: string) => {
-    setProjects([...data.projects]);
-    if (category !== "All") {
-      setProjects([
-        ...data.projects.filter((it) => it.category.id === category),
-      ]);
-    }
+
+  const changeCategory = (cat: string) => {
+    setCategory(cat);
   };
 
   return (
@@ -34,11 +30,11 @@ const Portfolio = ({ data }: PortfolioProps) => {
           <Categories
             categories={categories}
             categoryClass=" btn sm catbtn"
-            byCategory={byCategory}
+            changeCategory={changeCategory}
           />
         </div>
 
-        <Projects projects={projects} />
+        <Projects projects={data.projects} selectedCategory={category} />
       </div>
     </section>
   );
