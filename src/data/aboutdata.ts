@@ -30,9 +30,8 @@ export const aboutData: AboutData = {
       text: "Simple and Clean",
       icon: TbCircleNumber1Filled,
       text0: "Delivering robust and clean software products.",
-      text1:
-        "Always focused on the simplest solution that solves your problem.",
-      text2: "Avoid reinventing the weel.",
+      text1: "Always focus on the simplest solution that solves your problem.",
+      text2: "Avoid reinventing the wheel.",
     },
 
     {
