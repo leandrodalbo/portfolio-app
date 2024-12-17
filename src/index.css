@@ -33,13 +33,13 @@ body {
 }
 
 .darkmode {
-  --primary-hue: 4100;
+  --primary-hue: 4120;
 
   --black-lightness: 100%;
-  --white-lightness: 8%;
+  --white-lightness: 0%;
 
   --dark-lightness: 94%;
-  --light-lightness: 44%;
+  --light-lightness: 11%;
 
   --color-primary: hsl(var(--primary-hue), 89%, 41%);
   --color-white: hsl(0, 5%, var(--white-lightness));
@@ -49,13 +49,13 @@ body {
 }
 
 .ligthmode {
-  --primary-hue: 3350;
+  --primary-hue: 4115;
 
-  --black-lightness: 15%;
+  --black-lightness: 10%;
   --white-lightness: 100%;
 
-  --dark-lightness: 10%;
-  --light-lightness: 94%;
+  --dark-lightness: 40%;
+  --light-lightness: 80%;
 
   --color-primary: hsl(var(--primary-hue), 89%, 41%);
   --color-white: hsl(0, 5%, var(--white-lightness));
