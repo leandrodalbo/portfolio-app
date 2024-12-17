@@ -1,6 +1,6 @@
 import { AboutData } from "./types";
 
-import aboutimg from "../assets/l3.png";
+import aboutimg from "../assets/img0.jpg";
 
 import { TbCircleNumber0Filled } from "react-icons/tb";
 import { TbCircleNumber1Filled } from "react-icons/tb";

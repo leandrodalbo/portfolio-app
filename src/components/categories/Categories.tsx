@@ -3,13 +3,12 @@ import { useState } from "react";
 
 export interface CategoriesProps {
   categories: Set<string>;
-  categoryClass: string;
   changeCategory: (category: string) => void;
 }
 
 export const Categories = ({
   categories,
-  categoryClass,
+
   changeCategory,
 }: CategoriesProps) => {
   const [category, setCategory] = useState("All");
@@ -22,7 +21,7 @@ export const Categories = ({
   return Array.from(categories).map((it) => (
     <button
       key={it}
-      className={`${categoryClass} ${category === it ? "active" : ""}`}
+      className={`btn sm catbtn ${category === it ? "activecat" : ""}`}
       onClick={() => handleSelection(it)}
     >
       {it}

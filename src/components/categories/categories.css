@@ -1,4 +1,12 @@
-.active {
-  background: var(--color-light);
-  border: 1.5px solid var(--color-primary);
+.catbtn.activecat {
+  rotate: 1 1 0 35deg;
+}
+
+.catbtn {
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+
+.catbtn:hover {
+  border: 0;
 }

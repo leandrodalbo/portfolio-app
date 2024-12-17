@@ -1,22 +1,9 @@
 .categorieswrap {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 3rem;
   flex-wrap: wrap;
   margin: 1.5rem 1.5rem;
-}
-
-.categorieswrap .catbtn {
-  text-transform: capitalize;
-  transition: var(--transition);
-  color: var(--color-black);
-  background: var(--color-white);
-}
-
-.categorieswrap .catbtn:hover {
-  transform: translateY(0);
-  background: var(--color-light);
-  border: 1px solid var(--color-primary);
 }
 
 @media screen and (max-width: 600px) {

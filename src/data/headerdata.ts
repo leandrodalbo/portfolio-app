@@ -1,6 +1,6 @@
 import { HeaderData } from "./types";
 
-import headerimg from "../assets/l1.png";
+import headerimg from "../assets/img3.jpg";
 import { socialsData } from "./socialsdata";
 
 export const headerdata: HeaderData = {

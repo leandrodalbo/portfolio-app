@@ -28,7 +28,7 @@ header {
   margin: 0.6rem 0 2rem;
   font-size: 1.2rem;
   text-transform: capitalize;
-  color: var(--color-dark);
+  color: var(--color-black);
 }
 
 .headercta {

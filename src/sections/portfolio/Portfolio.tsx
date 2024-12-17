@@ -27,11 +27,7 @@ const Portfolio = ({ data }: PortfolioProps) => {
       <h2>{data.text}</h2>
       <div className="container portfoliocontainer">
         <div className="categorieswrap">
-          <Categories
-            categories={categories}
-            categoryClass=" btn sm catbtn"
-            changeCategory={changeCategory}
-          />
+          <Categories categories={categories} changeCategory={changeCategory} />
         </div>
 
         <Projects projects={data.projects} selectedCategory={category} />

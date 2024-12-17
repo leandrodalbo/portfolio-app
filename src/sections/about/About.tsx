@@ -32,12 +32,16 @@ const About = ({ data }: AboutProps) => {
               />
             ))}
           </div>
-          <p>{data.cards[cardId].text0}</p>
-          <p>{data.cards[cardId].text1}</p>
-          <p>{data.cards[cardId].text2}</p>
-          <a href="#services" className="btn primary">
-            {data.servicesbutton} {<data.servicesicon />}
-          </a>
+          <div className="info">
+            <div className="text">
+              <p>{data.cards[cardId].text0}</p>
+              <p>{data.cards[cardId].text1}</p>
+              <p>{data.cards[cardId].text2}</p>
+            </div>
+            <a href="#services" className="btn primary">
+              {data.servicesbutton} {<data.servicesicon />}
+            </a>
+          </div>
         </div>
       </div>
     </section>

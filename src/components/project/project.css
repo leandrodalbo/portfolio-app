@@ -1,58 +1,67 @@
 .project {
-  background: var(--color-white);
-  padding: 1.5rem;
-  border: 2px solid transparent;
-  border-radius: var(--border-radius-1);
+  padding: 2rem 1rem;
+  border-radius: var(--border-radius-3);
   transition: var(--transition);
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  position: relative;
-  gap: 0.3rem;
-}
-
-.project {
-  color: var(--color-dark);
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--color-black);
   background: transparent;
-  transform: translateY(-0.5rem);
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-dark);
 }
 
 .project.selected {
-  background: var(--color-primary);
-  color: var(--color-white);
-  transform: translateY(-0.5rem);
+  border: 2px solid var(--color-primary);
 }
 
-.project.selected .projectcta a {
-  background: var(--color-white);
-  color: var(--color-black);
+.info {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
 }
 
-.project p {
-  font-size: 0.7rem;
-  margin: 0.1rem 0.2rem;
+.info h6 {
+  text-decoration: underline;
 }
 
-.project p span {
-  font-size: 0.8rem;
+.text {
+  margin: 0.5rem 1rem;
+  width: 100%;
+}
+
+.text p {
+  font-size: medium;
+}
+.text span {
+  font-size: large;
   font-weight: bold;
 }
 
-.project h6 {
-  margin: 0.1rem 0.2rem;
-}
-
-.project .projectcta {
+.projectcta {
   display: flex;
   gap: 1rem;
+  flex-direction: column;
+  align-items: center;
 }
 
-.project .projectcta a:hover {
+.projectcta a:hover {
   background: var(--color-light);
 }
+
 @media screen and (max-width: 600px) {
   .project {
-    padding: 1.2rem;
+    padding: 1rem;
+  }
+
+  .info h4,
+  h6 {
+    font-size: x-small;
+  }
+
+  .text p {
+    font-size: x-small;
+  }
+  .text span {
+    font-size: x-small;
   }
 }
