@@ -1,0 +1,56 @@
+.social {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    background: var(--social-bg);
+    border-radius: var(--border-radius-2);
+  }
+  
+  .social a {
+    width: 3rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    border-radius: var(--border-radius-3);
+    font-size: 1.5rem;
+  }
+  
+  .social a:hover {
+    transform: rotate(360deg);
+  }
+
+  @media screen and (max-width: 1024px) {
+    .social {
+      flex-direction: row;
+      width: 80%;
+      justify-content: space-evenly;
+    }
+        
+    .social a {
+      width: 5rem;
+      height: 5rem;
+      font-size: 2.5rem;
+    }
+
+  }
+  
+  @media screen and (max-width: 600px) {
+    .social {
+      flex-direction: row;
+      width: 80%;
+      justify-content: space-between;
+    }
+     
+    .social a {
+      width: 3rem;
+      height: 3rem;
+      font-size: 1.5rem;
+    }
+  }
+  

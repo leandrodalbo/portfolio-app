@@ -7,8 +7,8 @@ import { NavItem } from "./types";
 export const sectionsData: NavItem[] = [
   {
     id: 0,
-    link: "#about",
-    title: "About",
+    link: "#intro",
+    title: "intro",
     icon: FaQuestion,
   },
   {

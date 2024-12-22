@@ -12,7 +12,7 @@ const Navbar = ({ data }: NavbarProps) => {
   return (
     <nav>
       <div className="container navcontainer">
-        <a className="logo" href="#header">
+        <a className="logo" href="#intro">
           <img src={data.logo} alt="JungleLogic Labs" />
         </a>
 

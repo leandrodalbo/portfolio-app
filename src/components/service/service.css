@@ -1,0 +1,29 @@
+.service {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: var(--service-bg);
+    
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+.service:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px var(--service-shadow);
+  }
+
+  .service {
+    color: var(--service-text);
+  }
+  
+  
+.service .icon {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 1.5em;
+    color: var(--service-icon); 
+}
+  
