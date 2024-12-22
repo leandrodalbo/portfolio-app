@@ -43,6 +43,10 @@
     margin-bottom: 0.5rem;
   }
   
+  .card.selected {
+    display: none;
+  }
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -56,5 +60,10 @@
     padding: 0.2rem;
     margin-bottom: 0.5rem;
   }
+
+  .card.selected {
+    display: none;
+  }
+  
 }
 

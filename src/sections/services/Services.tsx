@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Service from "../../components/service/Service";
 import { ServicesData } from "../../data/types";
 import "./services.css";
@@ -8,7 +9,7 @@ export interface ServicesProps {
 
 const Services = ({ data }: ServicesProps) => {
   return (
-    <section id="services">
+    <section>
       <h2>{data.text0}</h2>
       <div className="container servicescontainer">
           <div className="servicesimgcontainer">
@@ -23,9 +24,10 @@ const Services = ({ data }: ServicesProps) => {
           </div>
           <div className="servicesbtns">
 
-          <a href="#portfolio" className="btn primary">
+          <Link to={"/portfolio"} className="btn primary">
             {data.portfoliobutton}
-          </a>
+          </Link>         
+            
         </div>
         </div>
       </div>

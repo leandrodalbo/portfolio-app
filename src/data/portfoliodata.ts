@@ -13,7 +13,7 @@ export const portfolioData: PortfolioData = {
       description: "RESTful API exposing crypto trading signals.",
       technologies:
         "Spring-boot, Java, Gradle, jdbc, flywaydb, junit, testcontainers",
-      link: "https://prod-trading-signals-alb-2085839500.eu-west-2.elb.amazonaws.com/apidocs/swagger-ui/index.html",
+      link: "https://www.cryptosignalzone.click/apidocs/swagger-ui/index.html",
       repo: "https://github.com/leandrodalbo/crypto-trading-signal",
     },
     {

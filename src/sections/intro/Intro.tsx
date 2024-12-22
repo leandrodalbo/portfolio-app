@@ -2,6 +2,7 @@ import "./intro.css";
 import { useState } from "react";
 import { CardComponent } from "../../components/card/Card";
 import { IntroData } from "../../data/types";
+import { Link } from "react-router-dom";
 
 export interface IntroProps {
   data: IntroData;
@@ -14,7 +15,7 @@ const Intro = ({ data }: IntroProps) => {
   };
 
   return (
-    <section id="intro">
+    <section>
       <h2>{data.textheader}</h2>
       <div className="container introcontainer">
        
@@ -40,9 +41,11 @@ const Intro = ({ data }: IntroProps) => {
               <a href={data.email} className="btn primary">
                 {data.emailButton}
               </a>
-              <a href="#services" className="btn primary">
+              <Link to={"/services"} className="btn primary">
                 {data.servicesbutton} 
-              </a>
+              </Link> 
+              
+              
             </div>   
             
           </div>

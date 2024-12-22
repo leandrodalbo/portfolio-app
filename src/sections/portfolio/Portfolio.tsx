@@ -23,7 +23,7 @@ const Portfolio = ({ data }: PortfolioProps) => {
   };
 
   return (
-    <section id="portfolio">
+    <section>
       <h2>{data.text}</h2>
       <div className="container portfoliocontainer">
         <div className="categorieswrap">
