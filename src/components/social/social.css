@@ -9,6 +9,7 @@
     margin-left: 2rem;
     margin-bottom: 2rem;
     background: var(--social-bg);
+    color: var(--social-color);
     border-radius: var(--border-radius-2);
   }
   
