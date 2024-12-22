@@ -1,4 +1,5 @@
-import { CardComponent } from "../../components/card/Card";
+import { Link } from "react-router-dom";
+import Service from "../../components/service/Service";
 import { ServicesData } from "../../data/types";
 import "./services.css";
 
@@ -8,19 +9,29 @@ export interface ServicesProps {
 
 const Services = ({ data }: ServicesProps) => {
   return (
-    <section id="services">
+    <section>
       <h2>{data.text0}</h2>
-      <p>{data.text1}</p>
       <div className="container servicescontainer">
-        {data.services.map((it) => (
-          <CardComponent
-            key={it.id}
-            card={it}
-            onClickAction={() => {}}
-            isSelected={false}
-          />
-        ))}
+          <div className="servicesimgcontainer">
+            <img src={data.img} alt="servicesimg" />
+          </div>
+
+           <div className="servicesright">
+               <div className="serviceslist">
+                  {data.services.map((it) => 
+                    <Service key={it.id} service={it}/>
+                )}
+          </div>
+          <div className="servicesbtns">
+
+          <Link to={"/portfolio"} className="btn primary">
+            {data.portfoliobutton}
+          </Link>         
+            
+        </div>
+        </div>
       </div>
+   
     </section>
   );
 };

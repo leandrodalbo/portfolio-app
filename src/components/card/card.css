@@ -1,8 +1,7 @@
 .card {
-  background: var(--color-primary);
-  color: var(--color-white);
+  background: var(--card-bg);
   padding: 1.5rem;
-  border: 2px solid var(--color-light);
+  margin: 1.5rem;
   border-radius: var(--border-radius-1);
   transition: var(--transition);
   text-align: center;
@@ -11,22 +10,60 @@
 }
 
 .card.selected {
-  transform: translateY(-1.5rem);
+  transform: translateY(2rem);
 }
 
 .cardicon {
   width: fit-content;
   align-items: center;
   display: grid;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   padding: 0.5rem;
   margin-bottom: 1rem;
   margin-inline: auto;
   place-items: center;
+  color: var(--card-icon);
+}
+
+.cardtext{
+  color: var(--card-text);
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .card {
+    padding: 1.3rem;
+    margin: 1.3rem;
+  }
+
+  .cardicon {
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card.selected {
+    display: none;
+  }
+  
 }
 
 @media screen and (max-width: 600px) {
   .card {
-    padding: 1.2rem;
+    padding: 1.3rem;
+    margin: 1.3rem;
   }
+
+  .cardicon {
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card.selected {
+    display: none;
+  }
+  
 }
+

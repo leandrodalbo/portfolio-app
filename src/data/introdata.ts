@@ -1,6 +1,6 @@
-import { AboutData } from "./types";
+import { IntroData } from "./types";
 
-import aboutimg from "../assets/img0.jpg";
+import introimg from "../assets/img0.jpg";
 
 import { TbCircleNumber0Filled } from "react-icons/tb";
 import { TbCircleNumber1Filled } from "react-icons/tb";
@@ -8,13 +8,14 @@ import { TbCircleNumber2Filled } from "react-icons/tb";
 
 import { FaArrowDown } from "react-icons/fa";
 
-export const aboutData: AboutData = {
+export const introData: IntroData = {
   textheader: "What is JungleLogic Lab about?",
-
+  emailButton: "Email",
+  email: "mailto:leandro.edbo@gmail.com",
   servicesbutton: "Services",
   servicesicon: FaArrowDown,
-  img: aboutimg,
-
+  img: introimg,
+  
   cards: [
     {
       id: 0,

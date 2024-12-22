@@ -7,19 +7,19 @@ import { NavItem } from "./types";
 export const sectionsData: NavItem[] = [
   {
     id: 0,
-    link: "#about",
-    title: "About",
+    link: "/",
+    title: "intro",
     icon: FaQuestion,
   },
   {
     id: 1,
-    link: "#services",
+    link: "/services",
     title: "Services",
     icon: MdOutlineMiscellaneousServices,
   },
   {
     id: 2,
-    link: "#portfolio",
+    link: "/portfolio",
     title: "Portfolio",
     icon: IoCodeWorking,
   },

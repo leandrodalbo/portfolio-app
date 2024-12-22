@@ -11,6 +11,12 @@ export interface Card {
   text2: string;
 }
 
+export interface ServiceItem {
+  id: number;
+  text: string;
+  icon: IconType;
+}
+
 export interface NavData {
   logo: string;
   darkmodeIcon: IconType;
@@ -32,29 +38,21 @@ export interface SocialItem {
   icon: IconType;
 }
 
-export interface HeaderData {
-  text0: string;
-  text1: string;
-  img: string;
-  emailButton: string;
-  email: string;
-  portfoliobutton: string;
-  sociallinks: SocialItem[];
-}
-
-export interface AboutData {
+export interface IntroData {
   textheader: string;
-
   img: string;
   servicesbutton: string;
+  emailButton: string;
+  email: string;
   servicesicon: IconType;
   cards: Card[];
 }
 
 export interface ServicesData {
   text0: string;
-  text1: string;
-  services: Card[];
+  services: ServiceItem[];
+  img: string;
+  portfoliobutton: string;
 }
 
 export interface ContactData {
